@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<DamageDef ParentName="Flame">
+		<defName>Bell_ring</defName>
+		<label>loud noise make ear go ouchie sad face</label>
+		<deathMessage>{0} has met their bell end.</deathMessage>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+	</DamageDef>
+	<DamageDef ParentName="CutBase">
+		<defName>Pinched</defName>
+		<label>pinchy</label>
+		<deathMessage>{0} pinchy pinch.</deathMessage>
+		<impactSoundType>Slice</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+	</DamageDef>
+
+
+
+
+
+
+</Defs>

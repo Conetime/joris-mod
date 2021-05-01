@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+
+		<!--  Crab_bell_Joris  -->
+
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>Crab_bell_Joris</defName>
+		<label>Crab bell Joris</label>
+		<description>Crab bell Joris. His bell noise can be heard for miles around causing any chickens or hot sauce lovers in the reigon to quake in fear. His solid metal construction offers him a very protective hide against everything. Said to be forged using the heat of a dying star by the legendary Eye Key corporation in site A, these Jorisi are desired rim round for both their offensive properties and their looks. \n\n I dedicate this Joris to my two baby hermit crabs Ewan and Unnamed crab number two I love both of them very much </description>
+		<statBases>
+			<MoveSpeed>2</MoveSpeed>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			 <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<MarketValue>1500</MarketValue>
+		</statBases>
+		<uiIconScale>1</uiIconScale>
+
+		<comps>
+
+			<li Class="AnimalBehaviours.CompProperties_InitialHediff">
+				<hediffname>Bell_Ring</hediffname>
+				<hediffseverity>1</hediffseverity>
+				<applyToAGivenBodypart>true</applyToAGivenBodypart>
+				<part>Head</part>
+
+			</li>
+
+		</comps>
+		<tools>
+			<li>
+				<label>left pincer</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontLeftPincer</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>right pincer</label>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>30</power>
+				<cooldownTime>1.5</cooldownTime>
+				<linkedBodyPartsGroup>FrontRightPincer</linkedBodyPartsGroup>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>20</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<capacities>
+					<li>Cut</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>3</cooldownTime>
+				<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+				<chanceFactor>0.1</chanceFactor>
+				<surpriseAttack>
+					<extraMeleeDamages>
+						<li>
+							<def>Stun</def>
+							<amount>10</amount>
+						</li>
+					</extraMeleeDamages>
+				</surpriseAttack>
+			</li>
+			<li>
+				<label>Shell</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>25</power>
+				<cooldownTime>5</cooldownTime>
+				<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+				<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+				<chanceFactor>0.1</chanceFactor>
+			</li>
+		</tools>
+		<race>
+			<wildBiomes>
+				<ColdBog>0.01</ColdBog>
+				<BorealForest>0.01</BorealForest>
+				<Tundra>0.01</Tundra>				
+				<IceSheet>0.01</IceSheet>
+				<SeaIce>0.01</SeaIce>
+				<TemperateSwamp>0.005</TemperateSwamp>
+				<TemperateForest>0.005</TemperateForest>		
+				<TropicalSwamp>0.005</TropicalSwamp>					
+				<TropicalRainforest>0.005</TropicalRainforest>
+				<AridShrubland>0.0025</AridShrubland>
+				<Desert>0.0025</Desert>
+				<ExtremeDesert>0.0025</ExtremeDesert>				
+			</wildBiomes>
+			<wildness>0.7</wildness>
+			<useMeatFrom>Megaspider</useMeatFrom>
+			<herdAnimal>false</herdAnimal>
+			<predator>false</predator>
+			<maxPreyBodySize>3</maxPreyBodySize>
+			<body>Bell_Body</body>
+			<baseHungerRate>0.2</baseHungerRate>
+			<baseBodySize>1</baseBodySize>
+			<baseHealthScale>2.5</baseHealthScale>
+			<foodType>OmnivoreAnimal, OvivoreAnimal</foodType>
+			<leatherDef>Leather_Bear</leatherDef>
+			<gestationPeriodDays>20</gestationPeriodDays>			
+			<lifeExpectancy>30</lifeExpectancy>
+			<trainability>Advanced</trainability>
+
+			<manhunterOnTameFailChance>0.15</manhunterOnTameFailChance>
+			<manhunterOnDamageChance>0.60</manhunterOnDamageChance>
+			<lifeStageAges>
+				<li>
+					<def>AnimalBaby</def>
+					<minAge>0</minAge>
+				</li>
+				<li>
+					<def>AnimalJuvenile</def>
+					<minAge>0.4</minAge>
+				</li>
+				<li>
+					<def>AnimalAdult</def>
+					<minAge>0.8</minAge>
+					<soundWounded>Pawn_Bell</soundWounded>
+					<soundDeath>Pawn_Bell</soundDeath>
+					<soundCall>Pawn_Bell</soundCall>
+					<soundAngry>Pawn_Bell</soundAngry>
+				</li>
+			</lifeStageAges>
+			<soundMeleeHitPawn>Pawn_Bell</soundMeleeHitPawn>
+			<soundMeleeHitBuilding>Pawn_Bell</soundMeleeHitBuilding>
+			<soundMeleeMiss>Pawn_Melee_BigBash_Miss</soundMeleeMiss>
+		</race>
+		<tradeTags>
+			<li>AnimalUncommon</li>
+			<li>AnimalFighter</li>
+		</tradeTags>
+	</ThingDef>
+
+	<PawnKindDef ParentName="AnimalKindBase">
+
+		<defName>Crab_bell_Joris</defName>
+		<label>Crab_bell_Joris</label>
+		<race>Crab_bell_Joris</race>
+		<combatPower>500</combatPower>
+		<ecoSystemWeight>0.2</ecoSystemWeight>
+		<lifeStages>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bell/Bell</texPath>
+					<drawSize>1.4</drawSize>
+
+					<shadowData>
+						<volume>(0.4, 0.3, 0.3)</volume>
+						<offset>(0,0,-0.2)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
+					<drawSize>1.4</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bell/Bell</texPath>
+					<drawSize>2</drawSize>
+
+					<shadowData>
+						<volume>(0.6, 0.45, 0.45)</volume>
+						<offset>(0,0,-0.25)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
+					<drawSize>2</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+			<li>
+				<bodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bell/Bell</texPath>
+					<drawSize>2.7</drawSize>
+
+					<shadowData>
+						<volume>(0.8, 0.6, 0.6)</volume>
+						<offset>(0,0,-0.3)</offset>
+					</shadowData>
+				</bodyGraphicData>
+				<dessicatedBodyGraphicData>
+					<texPath>Things/Pawn/Animal/Bear/Dessicated_Bear</texPath>
+					<drawSize>2.7</drawSize>
+				</dessicatedBodyGraphicData>
+			</li>
+		</lifeStages>
+	</PawnKindDef>
+
+
+</Defs>
